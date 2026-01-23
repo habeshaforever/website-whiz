@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -59,8 +60,8 @@ export const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
-          <Button variant="hero" size="lg">
-            Schedule a Consultation
+          <Button variant="hero" size="lg" asChild>
+            <Link to="/contact">Schedule a Consultation</Link>
           </Button>
         </div>
 
@@ -92,8 +93,10 @@ export const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" className="mt-4">
-              Schedule a Consultation
+            <Button variant="hero" className="mt-4" asChild>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                Schedule a Consultation
+              </Link>
             </Button>
           </nav>
         </motion.div>
