@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 export const CTA = () => {
@@ -24,9 +25,11 @@ export const CTA = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button variant="secondary" size="xl">
-              Schedule a Free Consultation
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button variant="secondary" size="xl" asChild>
+              <Link to="/contact">
+                Schedule a Free Consultation
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </Button>
             <Button variant="outline" size="xl" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
               Download Case Studies

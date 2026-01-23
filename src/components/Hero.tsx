@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -72,12 +73,14 @@ export const Hero = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-4 pt-4"
             >
-              <Button variant="hero" size="xl">
-                Schedule a Consultation
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/contact">
+                  Schedule a Consultation
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
-              <Button variant="outline" size="xl">
-                Learn How It Works
+              <Button variant="outline" size="xl" asChild>
+                <a href="#how-it-works">Learn How It Works</a>
               </Button>
             </motion.div>
           </motion.div>
