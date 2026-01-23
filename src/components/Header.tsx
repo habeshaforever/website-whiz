@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
   { label: "Staffing Solutions", href: "#services" },
-  { label: "Why Partner With Us", href: "#why-us" },
+  { 
+    label: "Why Partner With Us", 
+    href: "#why-us",
+    dropdown: [
+      { label: "Why Tandem Bridge", href: "/why-tbs" },
+      { label: "Why Nearshore", href: "/why-nearshore" },
+    ]
+  },
   { label: "How It Works", href: "#how-it-works" },
   { label: "About Us", href: "#about" },
 ];
@@ -14,6 +21,7 @@ const navItems = [
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,25 +44,66 @@ export const Header = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
           <span className="font-bold text-xl text-foreground">
             Tandem<span className="text-primary">Bridge</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+            <div 
+              key={item.label} 
+              className="relative"
+              onMouseEnter={() => item.dropdown && setOpenDropdown(item.label)}
+              onMouseLeave={() => setOpenDropdown(null)}
             >
-              {item.label}
-            </a>
+              {item.dropdown ? (
+                <>
+                  <button
+                    className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                  </button>
+                  
+                  <AnimatePresence>
+                    {openDropdown === item.label && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 pt-2 z-50"
+                      >
+                        <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[200px]">
+                          {item.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.label}
+                              to={subItem.href}
+                              className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </>
+              ) : (
+                <a
+                  href={item.href}
+                  className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                >
+                  {item.label}
+                </a>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -84,14 +133,35 @@ export const Header = () => {
         >
           <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors py-2 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </a>
+              <div key={item.label}>
+                {item.dropdown ? (
+                  <div className="space-y-2">
+                    <span className="text-foreground font-medium py-2 block">
+                      {item.label}
+                    </span>
+                    <div className="pl-4 space-y-2 border-l-2 border-primary/20">
+                      {item.dropdown.map((subItem) => (
+                        <Link
+                          key={subItem.label}
+                          to={subItem.href}
+                          className="text-muted-foreground hover:text-primary transition-colors py-1 block text-sm"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <a
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors py-2 font-medium block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )}
+              </div>
             ))}
             <Button variant="hero" className="mt-4" asChild>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
