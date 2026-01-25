@@ -3,10 +3,8 @@ import { InlineWidget } from "react-calendly";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Mail } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -14,12 +12,15 @@ const Contact = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
         
         <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.6
+        }} className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
               Schedule a Consultation
             </h1>
@@ -36,12 +37,16 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Info Sidebar */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-1"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            x: -20
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.2
+          }} className="lg:col-span-1">
               <div className="bg-card rounded-2xl p-8 shadow-lg border border-border sticky top-28">
                 <h2 className="text-2xl font-bold text-primary mb-4">
                   Let's Talk About Your Needs
@@ -75,7 +80,7 @@ const Contact = () => {
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                     <p className="text-foreground">
                       <span className="font-semibold">All-inclusive, flat-fee model</span>
-                      <span className="text-muted-foreground"> — no hidden fees, benefits costs, or contracts.</span>
+                      <span className="text-muted-foreground">  no hidden fees, benefits costs, or contracts.</span>
                     </p>
                   </div>
 
@@ -83,7 +88,7 @@ const Contact = () => {
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                     <p className="text-foreground">
                       <span className="font-semibold">You choose the talent, we handle the rest</span>
-                      <span className="text-muted-foreground"> — including compliance, payroll, and office space for your remote employees.</span>
+                      <span className="text-muted-foreground"> including compliance, payroll, and office space for your remote employees.</span>
                     </p>
                   </div>
                 </div>
@@ -95,10 +100,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                      <a 
-                        href="mailto:info@tandembridge.com" 
-                        className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                      >
+                      <a href="mailto:info@tandembridge.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
                         info@tandembridge.com
                       </a>
                     </div>
@@ -108,12 +110,16 @@ const Contact = () => {
             </motion.div>
 
             {/* Calendly Widget */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="lg:col-span-2"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            x: 20
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.3
+          }} className="lg:col-span-2">
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
                 <div className="p-6 border-b border-border">
                   <h2 className="text-2xl font-bold text-foreground">
@@ -124,20 +130,16 @@ const Contact = () => {
                   </p>
                 </div>
                 <div className="calendly-wrapper">
-                  <InlineWidget 
-                    url="https://calendly.com/tandembridgecol/1-1-strategy-session"
-                    styles={{
-                      height: '700px',
-                      width: '100%',
-                    }}
-                    pageSettings={{
-                      backgroundColor: 'ffffff',
-                      hideEventTypeDetails: false,
-                      hideLandingPageDetails: false,
-                      primaryColor: '2563eb',
-                      textColor: '1a1a2e',
-                    }}
-                  />
+                  <InlineWidget url="https://calendly.com/tandembridgecol/1-1-strategy-session" styles={{
+                  height: '700px',
+                  width: '100%'
+                }} pageSettings={{
+                  backgroundColor: 'ffffff',
+                  hideEventTypeDetails: false,
+                  hideLandingPageDetails: false,
+                  primaryColor: '2563eb',
+                  textColor: '1a1a2e'
+                }} />
                 </div>
               </div>
             </motion.div>
@@ -146,8 +148,6 @@ const Contact = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
