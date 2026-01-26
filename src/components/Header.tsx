@@ -14,7 +14,14 @@ const navItems = [
       { label: "Why Nearshore", href: "/why-nearshore" },
     ]
   },
-  { label: "How It Works", href: "#how-it-works" },
+  { 
+    label: "How It Works", 
+    href: "#how-it-works",
+    dropdown: [
+      { label: "Our Process", href: "/our-process" },
+      { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
+    ]
+  },
   { label: "About Us", href: "#about" },
 ];
 
