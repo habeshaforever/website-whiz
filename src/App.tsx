@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import WhyTBS from "./pages/WhyTBS";
 import WhyNearshore from "./pages/WhyNearshore";
+import OurProcess from "./pages/OurProcess";
+import NearshoreVsOffshore from "./pages/NearshoreVsOffshore";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/why-tbs" element={<WhyTBS />} />
           <Route path="/why-nearshore" element={<WhyNearshore />} />
+          <Route path="/our-process" element={<OurProcess />} />
+          <Route path="/nearshore-vs-offshore" element={<NearshoreVsOffshore />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
