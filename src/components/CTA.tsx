@@ -17,7 +17,7 @@ export const CTA = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
-            Ready to Scale Your Team with Top Colombian Talent?
+            Ready to Scale Your Team with Elite South American Talent?
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
             Join hundreds of US companies saving 60% on staffing costs while 

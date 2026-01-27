@@ -46,8 +46,8 @@ export const Footer = () => {
               </span>
             </a>
             <p className="text-primary-foreground/60 mb-6">
-              The most cost-effective nearshore staffing solution. 
-              Top Colombian talent, US business culture.
+              U.S. operated. Nearshore teams that perform.
+              South American talent, American standards.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
