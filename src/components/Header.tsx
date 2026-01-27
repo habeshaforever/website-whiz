@@ -22,7 +22,14 @@ const navItems = [
       { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
     ]
   },
-  { label: "About Us", href: "#about" },
+  { 
+    label: "About Us", 
+    href: "#about",
+    dropdown: [
+      { label: "About TBS", href: "/about-tbs" },
+      { label: "Careers", href: "/careers" },
+    ]
+  },
 ];
 
 export const Header = () => {
