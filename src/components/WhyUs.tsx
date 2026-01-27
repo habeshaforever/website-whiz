@@ -10,7 +10,7 @@ const features = [
   {
     icon: Clock,
     title: "Same Time Zone",
-    description: "Colombia operates in Central Time, enabling real-time collaboration with your US-based team. No more waiting overnight for responses.",
+    description: "Our South American teams operate during U.S. business hours, enabling real-time collaboration. No more waiting overnight for responses.",
   },
   {
     icon: Globe,
@@ -25,7 +25,7 @@ const features = [
   {
     icon: Building2,
     title: "Modern Facilities",
-    description: "State-of-the-art office spaces in Colombia with enterprise-grade infrastructure, security, and technology.",
+    description: "State-of-the-art office spaces across South America with enterprise-grade infrastructure, security, and technology.",
   },
   {
     icon: Award,
@@ -64,7 +64,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Higher Wages Than Competitors</p>
-                  <p className="text-sm text-muted-foreground">We pay above market rates in Colombia, attracting top talent</p>
+                  <p className="text-sm text-muted-foreground">We pay above market rates across the region, attracting top talent</p>
                 </div>
               </div>
               
@@ -74,7 +74,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">5-Day Work Week</p>
-                  <p className="text-sm text-muted-foreground">While Colombia's standard is 6 days, TBS employees get Saturdays off</p>
+                  <p className="text-sm text-muted-foreground">All TBS team members work a standard 5-day U.S. schedule</p>
                 </div>
               </div>
 

@@ -46,8 +46,8 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-              Nearshore staffing in Colombia. Access top 5% talent with near-native English, 
-              shared time zones, and 60% cost savings compared to US hiring.
+              U.S. led staffing. South American talent. Built for scale. Access the top 5% of 
+              nearshore professionals with fluent English, real-time collaboration, and 60% cost savings.
             </p>
 
             {/* Trust Points */}
@@ -131,7 +131,7 @@ export const Hero = () => {
                     <span className="text-2xl">🕐</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Central Time Zone</p>
+                    <p className="font-semibold text-foreground">U.S. Aligned Time Zones</p>
                     <p className="text-sm text-muted-foreground">Real-time collaboration with your US team</p>
                   </div>
                 </div>
