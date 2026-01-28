@@ -46,7 +46,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-              U.S. led staffing. South American talent. Built for scale. Access the top 5% of 
+              U.S. led staffing. South American talent. Built for scale. Access the top 1% of 
               nearshore professionals with fluent English, real-time collaboration, and 60% cost savings.
             </p>
 

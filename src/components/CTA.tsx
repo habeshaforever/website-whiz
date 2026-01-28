@@ -21,7 +21,7 @@ export const CTA = () => {
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
             Join hundreds of US companies saving 60% on staffing costs while 
-            accessing the top 5% of nearshore talent.
+            accessing the top 1% of nearshore talent.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">

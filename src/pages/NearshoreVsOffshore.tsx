@@ -45,7 +45,7 @@ const comparisonData = [
   },
   {
     category: "Quality of Talent",
-    nearshore: { value: "Top 5% vetted professionals", positive: true },
+    nearshore: { value: "Top 1% vetted professionals", positive: true },
     offshore: { value: "Variable, high turnover", positive: false },
     domestic: { value: "High quality, competitive market", positive: true },
   },
