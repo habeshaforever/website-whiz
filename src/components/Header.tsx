@@ -76,7 +76,7 @@ const navItems: NavItem[] = [
     label: "Why Partner With Us", 
     href: "#why-us",
     dropdown: [
-      { label: "Why Tandem Bridge", href: "/why-tbs" },
+      { label: "Why Tandem Bridge Talent", href: "/why-tbs" },
       { label: "Why Nearshore", href: "/why-nearshore" },
     ]
   },
@@ -139,7 +139,7 @@ export const Header = () => {
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
           <span className="font-bold text-xl text-foreground">
-            Tandem<span className="text-primary">Bridge</span>
+            Tandem<span className="text-primary">Bridge</span> <span className="text-primary font-normal">Talent</span>
           </span>
         </Link>
 

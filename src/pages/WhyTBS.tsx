@@ -73,7 +73,7 @@ const WhyTBS = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Why Tandem Bridge?
+              Why Tandem Bridge Talent?
             </h1>
             <p className="text-xl text-primary-foreground/80">
               U.S. operated. Nearshore teams that perform. We deliver the talent, 
@@ -94,7 +94,7 @@ const WhyTBS = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              The Tandem Bridge Advantage
+              The Tandem Bridge Talent Advantage
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine the cost efficiency of nearshore staffing with the reliability 
@@ -210,7 +210,7 @@ const WhyTBS = () => {
               Ready to Build Your Dream Team?
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how Tandem Bridge can help you scale with top-tier 
+              Let's discuss how Tandem Bridge Talent can help you scale with top-tier 
               nearshore talent.
             </p>
             <Button 

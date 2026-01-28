@@ -324,7 +324,7 @@ const NearshoreVsOffshore = () => {
               The Bottom Line
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
-              Nearshore staffing with Tandem Bridge gives you the best of both worlds: 
+              Nearshore staffing with Tandem Bridge Talent gives you the best of both worlds: 
               <strong className="text-accent"> 40-60% cost savings</strong> with the 
               <strong className="text-accent"> real-time collaboration</strong> your business needs to thrive.
             </p>

@@ -88,7 +88,7 @@ const Careers = () => {
               Join Our Team
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Build Your Career with <span className="text-primary">Tandem Bridge</span>
+              Build Your Career with <span className="text-primary">Tandem Bridge Talent</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Join a team that values talent, rewards excellence, and offers the stability 
