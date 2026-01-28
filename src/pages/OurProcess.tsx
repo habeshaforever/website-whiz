@@ -23,7 +23,7 @@ const processSteps = [
     icon: Users,
     number: "02",
     title: "Talent Sourcing & Vetting",
-    description: "Our rigorous 8-step vetting process ensures only the top 5% of candidates reach your interview stage.",
+    description: "Our rigorous 8-step vetting process ensures only the top 1% of candidates reach your interview stage.",
     details: [
       "Skills assessment testing",
       "English proficiency verification",

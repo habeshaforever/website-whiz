@@ -29,7 +29,7 @@ const features = [
   },
   {
     icon: Award,
-    title: "Top 5% Talent",
+    title: "Top 1% Talent",
     description: "Rigorous vetting process ensures you get access to the best professionals across every discipline and specialty.",
   },
 ];
