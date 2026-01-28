@@ -21,7 +21,7 @@ const comparisonData = [
   },
   {
     category: "Cost Savings",
-    nearshore: { value: "40-60% savings", positive: true },
+    nearshore: { value: "50-70% savings", positive: true },
     offshore: { value: "60-70% savings", positive: true },
     domestic: { value: "No savings (baseline)", positive: false },
   },
@@ -66,7 +66,7 @@ const nearshoreAdvantages = [
   {
     icon: DollarSign,
     title: "Significant Cost Savings",
-    description: "Save 40-60% compared to domestic hiring while maintaining exceptional quality.",
+    description: "Save 50-70% compared to domestic hiring while maintaining exceptional quality.",
   },
   {
     icon: Globe,
@@ -325,7 +325,7 @@ const NearshoreVsOffshore = () => {
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
               Nearshore staffing with Tandem Bridge Talent gives you the best of both worlds: 
-              <strong className="text-accent"> 40-60% cost savings</strong> with the 
+              <strong className="text-accent"> 50-70% cost savings</strong> with the 
               <strong className="text-accent"> real-time collaboration</strong> your business needs to thrive.
             </p>
             <Button variant="hero" size="lg" asChild>

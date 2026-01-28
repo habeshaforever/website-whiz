@@ -63,7 +63,7 @@ const Contact = () => {
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                     <p className="text-foreground">
-                      <span className="font-semibold">Cut staffing costs by up to 60%</span>
+                      <span className="font-semibold">Cut staffing costs by up to 70%</span>
                       <span className="text-muted-foreground"> while accessing highly skilled, bilingual professionals.</span>
                     </p>
                   </div>

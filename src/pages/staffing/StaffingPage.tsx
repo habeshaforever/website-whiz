@@ -42,7 +42,7 @@ const staffingData: Record<string, {
     roles: ["Staff Accountants", "Senior Accountants", "Financial Analysts", "Bookkeepers", "Accounts Payable/Receivable", "Tax Specialists"],
     benefits: [
       { title: "U.S. GAAP Expertise", description: "Professionals trained in American accounting standards" },
-      { title: "Cost Savings", description: "Up to 60% savings compared to domestic hires" },
+      { title: "Cost Savings", description: "Up to 70% savings compared to domestic hires" },
       { title: "Real-Time Collaboration", description: "Same timezone work hours for seamless integration" },
     ]
   },
@@ -269,7 +269,7 @@ export const StaffingPage = () => {
             <div>
               <div className="flex items-center justify-center gap-2 text-primary mb-2">
                 <DollarSign className="w-6 h-6" />
-                <span className="text-3xl font-bold">60%</span>
+                <span className="text-3xl font-bold">70%</span>
               </div>
               <p className="text-muted-foreground">Cost Savings vs. U.S. Hires</p>
             </div>
