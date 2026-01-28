@@ -53,7 +53,7 @@ const Contact = () => {
                 </h2>
                 
                 <p className="text-muted-foreground mb-8">
-                  Supercharge your growth with a smarter staffing model. Tandem Bridge 
+                  Supercharge your growth with a smarter staffing model. Tandem Bridge Talent 
                   connects you with top-tier, bilingual talent across South America—giving you 
                   cost savings, stability, and a streamlined process that lets you focus 
                   on scaling your business.

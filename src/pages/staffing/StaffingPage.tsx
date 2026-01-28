@@ -331,7 +331,7 @@ export const StaffingPage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">Why Choose Tandem Bridge</h2>
+            <h2 className="text-3xl font-bold text-foreground">Why Choose Tandem Bridge Talent</h2>
             <p className="text-muted-foreground mt-4">The nearshore advantage for {data.title.toLowerCase()}</p>
           </motion.div>
           

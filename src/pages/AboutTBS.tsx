@@ -53,7 +53,7 @@ const AboutTBS = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-              About Tandem Bridge Solutions
+              About Tandem Bridge Talent
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               U.S. Operated. <span className="text-primary">Nearshore Excellence.</span>
@@ -81,7 +81,7 @@ const AboutTBS = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Tandem Bridge Solutions was founded with a simple belief: American businesses 
+                  Tandem Bridge Talent was founded with a simple belief: American businesses 
                   deserve access to world-class talent without the complexity and risk of 
                   traditional offshore staffing.
                 </p>
@@ -181,7 +181,7 @@ const AboutTBS = () => {
               Ready to Build Your Team?
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how Tandem Bridge can help you access top-tier talent 
+              Let's discuss how Tandem Bridge Talent can help you access top-tier talent 
               at a fraction of the cost.
             </p>
             <Button size="lg" variant="secondary" asChild>

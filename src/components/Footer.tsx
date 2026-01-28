@@ -42,7 +42,7 @@ export const Footer = () => {
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
               </div>
               <span className="font-bold text-xl">
-                Tandem<span className="text-accent">Bridge</span>
+                Tandem<span className="text-accent">Bridge</span> Talent
               </span>
             </a>
             <p className="text-primary-foreground/60 mb-6">
@@ -109,7 +109,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} Tandem Bridge Solutions. All rights reserved.
+            © {new Date().getFullYear()} Tandem Bridge Talent. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
             <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
