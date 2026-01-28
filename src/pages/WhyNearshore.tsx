@@ -23,7 +23,7 @@ const advantages = [
   {
     icon: DollarSign,
     title: "Significant Cost Savings",
-    description: "Access highly skilled talent at 40-60% lower costs compared to U.S.-based employees, without compromising on quality or expertise."
+    description: "Access highly skilled talent at 50-70% lower costs compared to U.S.-based employees, without compromising on quality or expertise."
   },
   {
     icon: Languages,
@@ -49,7 +49,7 @@ const advantages = [
 
 const comparisonData = [
   { factor: "Time Zone Overlap", nearshore: "Full overlap with U.S.", offshore: "Little to no overlap", domestic: "Full overlap" },
-  { factor: "Cost Savings", nearshore: "40-60% savings", offshore: "60-70% savings", domestic: "Baseline cost" },
+  { factor: "Cost Savings", nearshore: "50-70% savings", offshore: "60-70% savings", domestic: "Baseline cost" },
   { factor: "Communication", nearshore: "Real-time, fluent English", offshore: "Delayed, variable English", domestic: "Real-time" },
   { factor: "Cultural Fit", nearshore: "Strong alignment", offshore: "Significant differences", domestic: "Native understanding" },
   { factor: "Travel for Meetings", nearshore: "Same day possible", offshore: "20+ hours", domestic: "Varies" },
@@ -226,7 +226,7 @@ const WhyNearshore = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">60%</div>
+              <div className="text-4xl font-bold text-primary mb-2">70%</div>
               <p className="text-muted-foreground">
                 Average cost savings vs. U.S. hiring
               </p>

@@ -4,7 +4,7 @@ import { Globe, Clock, Users, DollarSign, Award, Building2 } from "lucide-react"
 const features = [
   {
     icon: DollarSign,
-    title: "60% Cost Savings",
+    title: "70% Cost Savings",
     description: "Reduce staffing costs significantly while maintaining quality. Our nearshore model delivers enterprise-level talent at a fraction of US rates.",
   },
   {

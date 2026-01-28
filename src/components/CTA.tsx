@@ -20,7 +20,7 @@ export const CTA = () => {
             Ready to Scale Your Team with Elite South American Talent?
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Join hundreds of US companies saving 60% on staffing costs while 
+            Join hundreds of US companies saving 70% on staffing costs while 
             accessing the top 1% of nearshore talent.
           </p>
 

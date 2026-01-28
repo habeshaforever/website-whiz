@@ -27,7 +27,7 @@ const benefits = [
   },
   {
     icon: TrendingUp,
-    title: "Up to 60% Cost Savings",
+    title: "Up to 70% Cost Savings",
     description: "Access top-tier talent at a fraction of the cost without sacrificing quality. Our flat-fee model means no hidden costs."
   },
   {

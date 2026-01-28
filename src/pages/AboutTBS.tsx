@@ -118,7 +118,7 @@ const AboutTBS = () => {
                   <div className="text-sm text-muted-foreground">Annual Turnover</div>
                 </div>
                 <div className="text-center p-4 bg-primary/5 rounded-xl">
-                  <div className="text-4xl font-bold text-primary mb-2">60%</div>
+                  <div className="text-4xl font-bold text-primary mb-2">70%</div>
                   <div className="text-sm text-muted-foreground">Cost Savings</div>
                 </div>
                 <div className="text-center p-4 bg-primary/5 rounded-xl">
