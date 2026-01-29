@@ -139,7 +139,7 @@ export const Header = () => {
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
           <span className="font-bold text-xl text-foreground">
-            Tandem<span className="text-primary">Bridge</span> <span className="text-primary font-normal">Talent</span>
+            Tandem<span className="text-primary">Bridge</span> Talent
           </span>
         </Link>
 
