@@ -99,7 +99,7 @@ export const Hero = () => {
                 className="col-span-2 bg-gradient-hero p-8 rounded-2xl text-primary-foreground shadow-glow"
               >
                 <div className="flex items-end gap-2">
-                  <AnimatedCounter end={60} suffix="%" className="text-6xl font-bold" />
+                  <AnimatedCounter end={70} suffix="%" className="text-6xl font-bold" />
                 </div>
                 <p className="text-lg opacity-90 mt-2">Cost Savings vs. US Hiring</p>
               </motion.div>
