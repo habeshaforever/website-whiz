@@ -37,12 +37,13 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+            <a href="#" className="flex items-center gap-3 mb-6">
+              <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
               </div>
-              <span className="font-bold text-xl">
-                Tandem<span className="text-accent">Bridge</span> Talent
+              <span className="text-2xl tracking-tight">
+                <span className="font-semibold text-primary-foreground">Tandem</span><span className="font-semibold text-primary">Bridge</span>
+                <span className="font-normal text-primary-foreground ml-1">Talent</span>
               </span>
             </a>
             <p className="text-primary-foreground/60 mb-6">

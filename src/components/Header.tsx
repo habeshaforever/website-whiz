@@ -134,12 +134,13 @@ export const Header = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+        <Link to="/" className="flex items-center gap-3">
+          <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
-          <span className="font-bold text-xl text-foreground">
-            Tandem<span className="text-primary">Bridge</span> <span className="text-primary font-normal">Talent</span>
+          <span className="text-2xl tracking-tight">
+            <span className="font-semibold text-foreground">Tandem</span><span className="font-semibold text-primary">Bridge</span>
+            <span className="font-normal text-foreground ml-1">Talent</span>
           </span>
         </Link>
 
